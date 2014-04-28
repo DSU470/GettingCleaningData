@@ -57,4 +57,6 @@
   ## Merge data sets
   dataAllOut = merge(dataAll, df_AllActivity_labels, by.x="ACTIVITY_ID", by.y="ACTIVITY_ID", all=TRUE)
 
-  dataAllOut
+  # Write to a file
+  write.csv(dataAllOut, "DataPeerAssignment.csv")
+
